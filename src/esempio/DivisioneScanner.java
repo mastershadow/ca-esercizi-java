@@ -18,7 +18,7 @@ public class DivisioneScanner {
 		boolean ok = false; // stato per vedere se tutto ok
 		double nu = 0; // numeratore
 		double de = 0; // denominatore
-		Divisione d = new Divisione();
+		DivisioneScanner d = new DivisioneScanner();
 		Scanner sc = new Scanner(System.in);
 		try {
 			// leggo i due numeri
