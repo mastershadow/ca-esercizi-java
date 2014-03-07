@@ -21,11 +21,12 @@ public class Compratore {
 		v.elencoProdotti();
 	}
 	
-	public void compraProdotto(Venditore v, int posizione) {
+	public Prodotto compraProdotto(Venditore v, int posizione) {
 		// chiedo al venditore di vendermi il prodotto in posizione
 		// lo ricevo come risultato dell'operazione
 		Prodotto p = v.vendiProdotto(posizione);
 		// qui diminuisco i soldi del prezzo del prodotto
 		soldi = soldi - p.getPrezzo();
+		return p;
 	}
 }
