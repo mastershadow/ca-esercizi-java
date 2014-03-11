@@ -8,6 +8,7 @@ public class Guidatore {
 	public Guidatore(String n, Automobile a) {
 		nome = n;
 		auto = a;
+		inAuto = false;
 	}
 	
 	public String getNome() {
@@ -52,5 +53,9 @@ public class Guidatore {
 		if (inAuto == true) {
 			auto.spegni();
 		}
+	}
+	
+	public boolean isInAuto() {
+		return inAuto;
 	}
 }
