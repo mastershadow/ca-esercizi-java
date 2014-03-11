@@ -73,7 +73,7 @@ public class Automobile {
 	}
 	
 	public boolean frena() {
-		if (isAccesa()) { // controllo che la macchina sia accesa
+		if (isAccesa() && velocita > 0) { // controllo che la macchina sia accesa
 			velocita = velocita - 1; // abbasso la velocità
 		}
 		
